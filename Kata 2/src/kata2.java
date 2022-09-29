@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class kata2 {
         public static void main(String[] args) {
-            Histogram histo = new Histogram(new int[] {0, 1, 4, 5, 2, 6, 7, 2, 3, 9, 0, 5, 8, 7, 2});
+            Histogram histo = new Histogram(new Integer[] {0, 1, 4, 5, 2, 6, 7, 2, 3, 9, 0, 5, 8, 7, 2});
 
             Map<Integer, Integer> histogr = histo.getHistogram();
 
