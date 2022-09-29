@@ -9,12 +9,8 @@ public class kata2 {
             int[] data = {0, 1, 4, 5, 2, 6, 7, 2, 3, 9, 0, 5, 8, 7, 2};
 
             Map<Integer, Integer> histogram = new HashMap<Integer, Integer>();
-            for (int i=0; i<15; i++){
-                if (histogram.containsKey(data[i])) {
-                    histogram.put(data[i], histogram.get(data[i])+1);
-                } else {
-                    histogram.put(data[i], 1);
-                }
+            for (Integer d : data){
+                histogram.put(d, histogram.containsKey(d) ? histogram.get(d)+1 : 1);
             }
 
             for (Map.Entry<Integer, Integer> entry : histogram.entrySet()) {
